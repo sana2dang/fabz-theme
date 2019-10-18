@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <theme>
   <formatVersion>4</formatVersion>
 
@@ -260,7 +260,7 @@
       <primaryColor>A0A0B0</primaryColor>
       <secondaryColor>A0A0B0</secondaryColor>
       <horizontalMargin>0.01</horizontalMargin>
-      <!--  <fontPath>./main/fonts/Exo2-RegularCondensed.otf</fontPath> -->
+      <fontPath>./main/fonts/Exo2-RegularCondensed.otf</fontPath>
       <fontSize>0.03</fontSize>
     </textlist>
   </view>
@@ -519,14 +519,16 @@
   </customView>
   <customView name="Windows Tiles" inherits="grid">
     <imagegrid name="gamegrid">
-      <autoLayout>4 3.15</autoLayout>
-      <autoLayoutSelectedZoom>1.02</autoLayoutSelectedZoom>
+      <showVideoAtDelay>0</showVideoAtDelay>
+      <autoLayout>4 3</autoLayout>
+      <autoLayoutSelectedZoom>1.32</autoLayoutSelectedZoom>
       <imageSource>image</imageSource>
       <margin>0.005 0.010</margin>
       <pos>0 0</pos>
       <size>1 1</size>
       <padding>0.03 0.13 0.03 0.08</padding>
       <zIndex>11</zIndex>
+      <animateSelection>true</animateSelection>
     </imagegrid>
     <gridtile name="default">
       <size>0.225 0.254</size>
@@ -537,24 +539,34 @@
     </gridtile>
     <gridtile name="selected">
       <size>0.230 0.259</size>
-      <padding>0 0</padding>
-      <backgroundColor>00000000</backgroundColor>
+      <padding>10 10</padding>
+      <backgroundColor>FFFFFFFF</backgroundColor>
       <imageColor>FFFFFFFF</imageColor>
     </gridtile>
     <text name="gridtile">
       <color>ffffff</color>
       <backgroundColor>00000090</backgroundColor>
-      <fontSize>0.022</fontSize>
+      <fontSize>0.030</fontSize>
       <alignment>center</alignment>
-      <size>0 0.18</size>
+      <size>0 0.2</size>
     </text>
+    <text name="gridtile_selected">
+      <color>000000</color>
+      <fontSize>0.035</fontSize>
+      <alignment>center</alignment>
+      <glowSize>4</glowSize>
+      <glowColor>FFFFFFFF</glowColor>
+      <size>0 0.2</size>
+    </text>
+
+
   </customView>
   <customView name="Video grid" inherits="grid">
     <imagegrid name="gamegrid">
-      <showVideoAtDelay>700</showVideoAtDelay>
+      <showVideoAtDelay>200</showVideoAtDelay>
       <imageSource>image</imageSource>
       <autoLayout>4 3</autoLayout>
-      <autoLayoutSelectedZoom>1.04</autoLayoutSelectedZoom>
+      <autoLayoutSelectedZoom>1.14</autoLayoutSelectedZoom>
       <margin>0.003 0.006</margin>
       <pos>0 0</pos>
       <size>1 1</size>
@@ -578,7 +590,7 @@
     <text name="gridtile">
       <color>969A9E</color>
       <fontPath>./main/fonts/Dosis-Book.ttf</fontPath>
-      <fontSize>0.025</fontSize>
+      <fontSize>0.030</fontSize>
       <alignment>center</alignment>
       <glowColor>00000030</glowColor>
       <glowSize>2</glowSize>
@@ -587,8 +599,8 @@
     <text name="gridtile_selected">
       <color>F6FAFF</color>
       <fontPath>./main/fonts/Dosis-Bold.ttf</fontPath>
-      <fontSize>0.025</fontSize>
-      <glowSize>3</glowSize>
+      <fontSize>0.045</fontSize>
+      <glowSize>7</glowSize>
       <glowColor>006ca322</glowColor>
       <size>0 0.18</size>
     </text>
