@@ -9,7 +9,7 @@
   </view>
   <view name="system, basic, detailed, grid">
     <image name="logo">
-      <path>./svg/logo.png</path>
+      <path>./svg/logo.svg</path>
     </image>
   </view>
 </theme>
