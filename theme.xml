@@ -70,7 +70,7 @@
     </helpsystem>
     <clock name="clock">
       <textColor>A2A2A2FF</textColor>      
-      <fontSize>0.05</fontSize>
+      <fontSize>0.25</fontSize>
       <pos>0.92 0.03</pos>
     </clock>
   </view>
@@ -79,25 +79,12 @@
       <carousel name="systemcarousel">
         <color>FFFFFFB0</color>
         <colorEnd>E8F6FFF6</colorEnd>
-        <pos>0 0.6537</pos>
-        <!--<pos>0 0.3837</pos>-->
-        <size>1 0.2325</size>
+        <pos>0 0.6</pos>
+        <size>1 0.32</size>
       </carousel>
-      <image name="carousel-shadow" extra="true">
-        <path>./main/imagens/shadow.png</path>
-        <color>FFFFFF50</color>
-        <pos>0 0.8862</pos> 
-        <!--<pos>0 0.6162</pos>-->
-        <origin>0 0</origin>
-        <size>1 0.025</size>
-      </image>
       <text name="systemInfo">
-        <pos>0.35 0.95</pos>
-        <size>0.64 0.05</size>
-        <backgroundColor>00000000</backgroundColor>
-        <color>A2A2A2</color>
-        <fontSize>0.03</fontSize>
-        <alignment>right</alignment>
+        <pos>0.0 0.85</pos>
+        <backgroundColor>8C8C8C50</backgroundColor>
       </text>
     </view>
   </feature>
@@ -141,7 +128,7 @@
       <alignment>left</alignment>
     </textlist>
     <text name="md_rating">
-      <pos>0.91 0.96</pos>
+      <pos>0.90 0.96</pos>
       <size>0.04 0.03</size>
     </text>
     <text name="md_lbl_developer">
@@ -245,13 +232,13 @@
       <color>FFFFFFD8</color>
       <pos>0 0</pos>
       <origin>0 0</origin>
-      <size>1 0.1</size>
+      <size>1 0.07</size>
       <zIndex>13</zIndex>
     </image>
     <image name="logo">
-      <pos>0.5 0.05</pos>
+      <pos>0.5 0.035</pos>
       <origin>0.5 0.5</origin>
-      <maxSize>1 0.09</maxSize>
+      <maxSize>1 0.06</maxSize>
     </image>
     <textlist name="gamelist">
       <selectorColor>108cc3</selectorColor>
@@ -261,7 +248,7 @@
       <secondaryColor>A0A0B0</secondaryColor>
       <horizontalMargin>0.01</horizontalMargin>
       <fontPath>./main/fonts/Exo2-RegularCondensed.otf</fontPath>
-      <fontSize>0.03</fontSize>
+      <fontSize>0.04</fontSize>
     </textlist>
   </view>
   <view name="grid">
